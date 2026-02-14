@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex: row;
+
+  span {
+    color: goldenrod;
+    cursor: pointer;
+  }
+
+  &.disabled {
+    pointer-events: none;
+
+    span {
+      color: lightgray;
+    }
+  }
+
+  &.readonly {
+    pointer-events: unset;
+  }
+}

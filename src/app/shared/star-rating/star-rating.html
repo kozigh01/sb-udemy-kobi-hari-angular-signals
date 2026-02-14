@@ -1,0 +1,7 @@
+@for(i of stars(); track $index) {
+<span class="material-icons" (click)="setValue(i)">
+  @if(value() >= i) { star } @else { star_outline }
+</span>
+} @if(errors() && errors().length > 0) {
+<span [style.padding-left.em]="2">there are {{errors().length}} error(s)</span>
+}
