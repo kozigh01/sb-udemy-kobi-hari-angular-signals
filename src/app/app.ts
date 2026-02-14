@@ -3,26 +3,18 @@ import { CommonModule } from '@angular/common';
 import { DinnerReview } from './models/dinner-review.model';
 import {
   apply,
-  applyEach,
-  customError,
   disabled,
   email,
   Field,
   form,
-  max,
-  min,
-  minLength,
   required,
   submit,
-  validate,
-  validateTree,
 } from '@angular/forms/signals';
 import { ReviewsService } from './services/reviews-service';
 import { FieldStyleDirective } from './shared/field-styling.directive';
 import { FieldWrapper } from './shared/field-wrapper/field-wrapper';
 import { ReviewItemForm } from './shared/review-item-form/review-item-form';
 import { reviewItemSchema } from './models/schemas/review-item.schema';
-import { AbstractControl } from '@angular/forms';
 import { minWords } from './models/schemas/min-words-validator';
 
 @Component({

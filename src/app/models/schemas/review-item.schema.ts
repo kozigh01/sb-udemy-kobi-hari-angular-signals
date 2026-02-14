@@ -4,7 +4,6 @@ import {
   max,
   min,
   readonly,
-  required,
   schema,
   validateTree,
 } from '@angular/forms/signals';
